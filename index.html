@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+ <script src="main.js"></script>
+</head>
+<body>
+  <h1 class=" h-19 text-3xl font-bold  text-white bg-indigo-700 justify-center text-center">
+   Calculate the value in the calculater made by me 
+  </h1>
+  <!-- <body class="bg-gray-100 flex items-center justify-center min-h-screen"> -->
+<div class="bg-indigo-400 flex items-center justify-center min-h-screen">
+     <!-- Calculator Container -->
+  <div class="bg-blue-950 shadow-lg rounded-lg p-6 w-96" drop-shadow-xl">
+    <!-- Display Section -->
+    <div class="bg-gray-200 text-right p-4 rounded-md mb-4 text-2xl font-mono" id="display">
+      0
+    </div>
+
+    <!-- Buttons Grid -->
+    <div class="grid grid-cols-4 gap-4">
+      <!-- Number Buttons -->
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('7')">7</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('8')">8</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('9')">9</button>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded text-xl" onclick="appendValue('/')">÷</button>
+      
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('4')">4</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('5')">5</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('6')">6</button>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded text-xl" onclick="appendValue('*')">×</button>
+      
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('1')">1</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('2')">2</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('3')">3</button>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded text-xl" onclick="appendValue('-')">−</button>
+      
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('0')">0</button>
+      <button class="bg-gray-300 hover:bg-gray-400 p-4 rounded text-xl" onclick="appendValue('.')">.</button>
+      <button class="bg-green-500 hover:bg-green-600 text-white p-4 rounded text-xl" onclick="calculateResult()">=</button>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded text-xl" onclick="appendValue('+')">+</button>
+      
+      <!-- Clear Button -->
+      <button class="col-span-4 bg-red-500 hover:bg-red-600 text-white p-4 rounded text-xl" onclick="clearDisplay()">C</button>
+    </div>
+  </div>
+</div>
+ 
+
+</body>
+</html>
